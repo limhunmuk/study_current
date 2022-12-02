@@ -30,6 +30,8 @@ class SessionManagerTest {
         Object result = manager.getSession(request);
         Assertions.assertThat(result).isEqualTo(member);
 
+        System.out.println("lhm test");
+
         // 세션 삭제
         manager.expire(request);
         Member resultMember = (Member) manager.getSession(request);
