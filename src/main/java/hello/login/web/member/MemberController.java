@@ -20,7 +20,6 @@ public class MemberController {
 
     @GetMapping("/add")
     public String addForm(@ModelAttribute("member") Member member) {
-        System.out.println(" >>>>>>>>>>> ");
         return "members/addMemberForm";
     }
 
