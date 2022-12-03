@@ -22,6 +22,7 @@ public class MemberController {
     public String addForm(@ModelAttribute("member") Member member) {
         System.out.println("123123");
         System.out.println("member = " + member);
+        System.out.println(" 충돌발생시키고 머지 후 커밋 !!");
         return "members/addMemberForm";
     }
 
