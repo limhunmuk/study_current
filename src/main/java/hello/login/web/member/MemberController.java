@@ -21,7 +21,7 @@ public class MemberController {
     @GetMapping("/add")
     public String addForm(@ModelAttribute("member") Member member) {
         System.out.println("123123");
-        System.out.println("11");
+        System.out.println("member = " + member);
         return "members/addMemberForm";
     }
 
